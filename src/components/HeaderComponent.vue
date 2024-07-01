@@ -18,16 +18,16 @@
     <nav class="header__categories categories">
       <ul class="categories__list">
         <li class="categories__item">
-          <a class="categories__item-button">Categories</a>
+          <a class="categories__item_button">Categories</a>
         </li>
         <li class="categories__item">
-          <button class="categories__item-button">All</button>
+          <button class="categories__item_button">All</button>
         </li>
         <li class="categories__item">
-          <button class="categories__item-button">Water</button>
+          <button class="categories__item_button">Water</button>
         </li>
         <li class="categories__item">
-          <button class="categories__item-button">Coffee</button>
+          <button class="categories__item_button">Coffee</button>
         </li>
       </ul>
     </nav>

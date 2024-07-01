@@ -1,12 +1,15 @@
 <template>
   <main class="main">
-    <AsideComponent></AsideComponent>
+    <SideBarComponent></SideBarComponent>
+    <BagBarComponent></BagBarComponent>
+
   </main>
 </template>
 
 <script setup>
 
-import AsideComponent from "./AsideComponent.vue";
+import SideBarComponent from "./SideBarComponent.vue";
+import BagBarComponent from "./BagBarComponent.vue";
 </script>
 
 <style lang="scss" scoped>
