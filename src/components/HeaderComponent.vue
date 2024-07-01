@@ -5,7 +5,7 @@
 <template>
   <header class="header">
     <div class="header__logo">
-      <img src="" alt="logo">
+      <img src=" " alt="logo">
     </div>
     <div class="header__top">
 
