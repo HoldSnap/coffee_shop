@@ -18,7 +18,7 @@
     <nav class="header__categories categories">
       <ul class="categories__list">
         <li class="categories__item">
-          <button class="categories__item-button">Categories</button>
+          <a class="categories__item-button">Categories</a>
         </li>
         <li class="categories__item">
           <button class="categories__item-button">All</button>
@@ -32,7 +32,8 @@
       </ul>
     </nav>
   </header>
-</template>
+
+  </template>
 
 <style scoped>
 
