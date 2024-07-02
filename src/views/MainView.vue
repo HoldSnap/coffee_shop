@@ -7,8 +7,9 @@
 
 <script setup>
 
-import SideBarComponent from "./SideBarComponent.vue";
-import ContentComponent from "./ContentComponent.vue";
+
+import SideBarComponent from "../components/SideBarComponent.vue";
+import ContentComponent from "../components/ContentComponent.vue";
 </script>
 
 <style lang="scss" scoped>
