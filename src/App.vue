@@ -1,10 +1,10 @@
 <script setup>
-import MainComponent from "./components/MainComponent.vue";
+import ContentView from "./views/ContentView.vue";
 </script>
 
 <template>
 
-  <MainComponent />
+  <ContentView />
 </template>
 
 <style scoped>

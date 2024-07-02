@@ -4,12 +4,14 @@
 
 <template>
   <header class="header">
-    <div class="header__logo">
-      <img src=" " alt="logo">
-    </div>
+
     <div class="header__top">
 
       <div class="header__date">
+        june 20 20
+      </div>
+      <div class="header__field">
+        Categories
       </div>
       <div class="header__search">
         <input>
@@ -33,8 +35,10 @@
     </nav>
   </header>
 
-  </template>
+</template>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.header {
+  width: 60%;
+}
 </style>
