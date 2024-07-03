@@ -6,7 +6,7 @@
   <aside class="main__sidebar sidebar">
     <ul class="sidebar__list">
       <li class="sidebar__item">
-        <img src=" " alt="logo" class="sidebar__logo">
+        <img src="/src/assets/logo/logo-no-background.png" alt="logo" class="sidebar__logo">
       </li>
       <li class="sidebar__item">
         <a href="#" class="sidebar__link">Menu</a>
@@ -19,7 +19,13 @@
 </template>
 
 <style lang="scss" scoped>
+@import "src/styles/utils/variables";
+
 .main__sidebar{
   width: 20%;
+}
+.sidebar__item{
+  width: 50%;
+  margin: $primary-margin
 }
 </style>
