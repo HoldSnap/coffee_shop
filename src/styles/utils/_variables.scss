@@ -6,8 +6,8 @@ $text-color: #2c3e50;
 $border-color: #bdc3c7;
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans&display=swap');
-$font-family-base: 'Exo', semi-bold;
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans&display=swap");
+$font-family-base: "Exo", semi-bold;
 $font-size-base: 16px;
 $font-size-large: 20px;
 $font-size-small: 12px;
@@ -29,4 +29,4 @@ $box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
 $box-shadow-large: 0 8px 16px rgba(0, 0, 0, 0.2);
 
 // Margin
-$primary-margin: 25px
+$primary-margin: 25px;

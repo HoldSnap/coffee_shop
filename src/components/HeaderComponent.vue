@@ -2,17 +2,21 @@
   <header class="header">
     <div class="header__top">
       <div class="header__info">
-        <div class="header__date">
-          Sunday, June 20 2021
-        </div>
-        <div class="header__field">
-          Menu
-        </div>
+        <div class="header__date">Sunday, June 20 2021</div>
+        <div class="header__field">Menu</div>
       </div>
       <div class="header__search">
-        <input class="header__input" type="text" placeholder="Search...">
-        <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <input class="header__input" type="text" placeholder="Search..." />
+        <svg
+          class="header__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
@@ -36,7 +40,6 @@
     </nav>
   </header>
 </template>
-
 
 <style lang="scss" scoped>
 @import "src/styles/utils/variables";
@@ -92,5 +95,4 @@
 .categories__list {
   display: flex;
 }
-
 </style>

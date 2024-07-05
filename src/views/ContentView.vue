@@ -1,5 +1,4 @@
 <script setup>
-
 import HeaderComponent from "../components/HeaderComponent.vue";
 import SideBarComponent from "../components/SideBarComponent.vue";
 import MainView from "./MainView.vue";
@@ -23,7 +22,7 @@ import ContentComponent from "../components/ContentComponent.vue";
   display: flex;
   height: 100vh;
 }
-.container__content{
+.container__content {
   width: 60%;
 }
 </style>

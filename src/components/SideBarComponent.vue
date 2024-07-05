@@ -1,12 +1,14 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <aside class="main__sidebar sidebar">
     <ul class="sidebar__list">
       <li class="sidebar__item">
-        <img src="/src/assets/logo/logo-no-background.png" alt="logo" class="sidebar__logo">
+        <img
+          src="/src/assets/logo/logo-no-background.png"
+          alt="logo"
+          class="sidebar__logo"
+        />
       </li>
       <li class="sidebar__item">
         <a href="#" class="sidebar__link">Menu</a>
@@ -21,11 +23,11 @@
 <style lang="scss" scoped>
 @import "src/styles/utils/variables";
 
-.main__sidebar{
+.main__sidebar {
   width: 20%;
 }
-.sidebar__item{
+.sidebar__item {
   width: 50%;
-  margin: $primary-margin
+  margin: $primary-margin;
 }
 </style>

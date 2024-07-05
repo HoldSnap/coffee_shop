@@ -1,0 +1,39 @@
+name: Run linting and pnpm
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-and-test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-18.04, ubuntu-20.04]
+        node: [10, 12, 14]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Установить Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+
+      - name: Установить pnpm
+        run: npm install -g pnpm
+
+      - name: Установить зависимости
+        run: pnpm install
+
+      - name: Линтинг и форматирование
+        run: pnpm run lint-and-format
+
+      - name: Сборка проекта
+        run: pnpm run build
+
+      - name: Запустить тесты
+        run: pnpm test
