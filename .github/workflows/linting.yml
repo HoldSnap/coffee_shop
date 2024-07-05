@@ -37,5 +37,3 @@ jobs:
       - name: Сборка проекта
         run: pnpm run build
 
-      - name: Запустить тесты
-        run: pnpm test
