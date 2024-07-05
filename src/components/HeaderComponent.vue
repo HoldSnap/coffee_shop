@@ -1,3 +1,27 @@
+<script setup>
+import { ref } from "vue";
+
+// Массив категорий продуктов
+const categories = ref([
+  "Categories",
+  "All",
+  "Water",
+  "Coffee",
+  "Coffee2",
+  "NeWAter",
+  "Boba",
+  "kartoha",
+  "Potata",
+]);
+
+const activeIndex = ref(0);
+
+const setActive = (index) => {
+  activeIndex.value = index;
+};
+</script>
+pt>
+
 <template>
   <header class="header">
     <div class="header__top">
@@ -24,17 +48,20 @@
     </div>
     <nav class="header__categories categories">
       <ul class="categories__list">
-        <li class="categories__item">
-          <button class="categories__item_button">Categories</button>
-        </li>
-        <li class="categories__item">
-          <button class="categories__item_button">All</button>
-        </li>
-        <li class="categories__item">
-          <button class="categories__item_button">Water</button>
-        </li>
-        <li class="categories__item">
-          <button class="categories__item_button">Coffee</button>
+        <li
+          class="categories__item"
+          v-for="(category, index) in categories"
+          :key="index"
+        >
+          <button
+            class="categories__item_button"
+            :class="{
+              'categories__item_button--active': activeIndex === index,
+            }"
+            @click="setActive(index)"
+          >
+            {{ category }}
+          </button>
         </li>
       </ul>
     </nav>
@@ -44,6 +71,7 @@
 <style lang="scss" scoped>
 @import "src/styles/utils/variables";
 
+// Блок: header
 .header {
   font-family: $font-family-base;
   width: 100%;
@@ -51,48 +79,98 @@
   flex-direction: column;
   margin-top: $primary-margin;
   padding-right: 25px;
+
+  &__top {
+    display: flex;
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &__search {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40vw;
+    height: 50px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 3rem;
+    border-radius: 8px;
+    color: $primary-color;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    stroke: $primary-color;
+  }
+
+  &__date {
+    color: $unable-color;
+  }
+
+  &__field {
+    margin-top: 10px;
+    font-family: $font-family-base;
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+  }
+
+  &__categories {
+    margin-top: $primary-margin;
+  }
 }
 
-.header__top {
-  display: flex;
-  width: 100%;
-}
+.categories {
+  &__list {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 
-.header__info {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
+  &__item {
+    flex: 0 0 auto;
 
-.header__search {
-  position: relative;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 40vw;
-  height: 50px;
-}
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
 
-.header__input {
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  padding-left: 3rem;
-  border-radius: 8px;
-  color: $primary-color;
-}
+  &__item_button {
+    border: none;
+    outline: none;
+    background-color: $background-color;
+    color: $button-color;
+    margin-left: 10px;
+  }
 
-.header__icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  stroke: $primary-color;
-}
+  &__item_button {
+    border: none;
+    outline: none;
+    background-color: $background-color;
+    color: $button-color;
+    cursor: pointer;
+    font-size: $font-size-base;
 
-.categories__list {
-  display: flex;
+    &--active {
+      color: $primary-color;
+      font-weight: $font-weight-bold;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
 }
 </style>

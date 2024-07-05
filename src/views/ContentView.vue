@@ -1,7 +1,6 @@
 <script setup>
 import HeaderComponent from "../components/HeaderComponent.vue";
 import SideBarComponent from "../components/SideBarComponent.vue";
-import MainView from "./MainView.vue";
 import BagBarComponent from "../components/BagBarComponent.vue";
 import ContentComponent from "../components/ContentComponent.vue";
 </script>

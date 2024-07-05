@@ -1,9 +1,9 @@
 $primary-color: #704232;
 $secondary-color: white;
-$accent-color: #e74c3c;
-$background-color: #ecf0f1;
-$text-color: #2c3e50;
+$unable-color: rgba(131, 129, 129, 0.9);
+$background-color: #f8f7f7;
 $border-color: #bdc3c7;
+$button-color: rgba(103, 101, 101, 0.9);
 
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans&display=swap");
@@ -11,6 +11,7 @@ $font-family-base: "Exo", semi-bold;
 $font-size-base: 16px;
 $font-size-large: 20px;
 $font-size-small: 12px;
+$font-weight-bold: 500;
 
 // Spacing
 $spacing-unit: 8px;
