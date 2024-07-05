@@ -29,8 +29,10 @@ jobs:
       - name: Установить зависимости
         run: pnpm install
 
-      - name: Линтинг и форматирование
-        run: pnpm run lint-and-format
+      - name: Линтинг
+        run: pnpm run lint
+      - name: Формат
+        run: pnpm run format
 
       - name: Сборка проекта
         run: pnpm run build
