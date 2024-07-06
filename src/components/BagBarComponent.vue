@@ -5,8 +5,8 @@
     <div class="bag__info">
       <div class="bag__info_number"></div>
       <div class="input">
-        <input class="input__number" />
-        <input class="input__name" />
+        <input class="input__number"/>
+        <input class="input__name"/>
       </div>
     </div>
     <ul class="bag__list">
@@ -25,4 +25,23 @@
   </aside>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+@import "src/styles/utils/variables";
+
+.main__bag {
+  margin-right: $primary-margin;
+
+}
+
+.bag {
+  margin: $primary-margin;
+  background-color: white;
+  border-radius: $border-radius-medium;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &__info {
+
+  }
+}
+
+</style>

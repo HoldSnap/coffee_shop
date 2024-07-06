@@ -56,7 +56,7 @@
 .svg__block {
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: $border-radius-large;
   display: flex;
   width: 150px;
   height: 150px;
