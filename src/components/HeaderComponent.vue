@@ -1,21 +1,24 @@
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
+import categoriesData from "../stores/mock/Items.json";
 
-// Массив категорий продуктов
-const categories = ref([
-  "Categories",
-  "All",
-  "Water",
-  "Coffee",
-  "Coffee2",
-  "NeWAter",
-  "Boba",
-  "kartoha",
-  "Potata",
-]);
-
+const currentDate = ref("");
+const categories = ref(categoriesData.categories[0].categories);
 const activeIndex = ref(0);
 
+const formatCurrentDate = () => {
+  const options = {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  };
+  currentDate.value = new Date().toLocaleDateString("en-US", options);
+};
+
+onMounted(() => {
+  formatCurrentDate();
+});
 const setActive = (index) => {
   activeIndex.value = index;
 };
@@ -26,7 +29,7 @@ pt>
   <header class="header">
     <div class="header__top">
       <div class="header__info">
-        <div class="header__date">Sunday, June 20 2021</div>
+        <div class="header__date">{{ currentDate }}</div>
         <div class="header__field">Menu</div>
       </div>
       <div class="header__search">
@@ -60,7 +63,7 @@ pt>
             }"
             @click="setActive(index)"
           >
-            {{ category }}
+            {{ category.name }}
           </button>
         </li>
       </ul>

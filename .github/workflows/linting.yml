@@ -36,4 +36,3 @@ jobs:
 
       - name: Сборка проекта
         run: pnpm run build
-

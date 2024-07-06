@@ -5,8 +5,8 @@
     <div class="bag__info">
       <div class="bag__info_number"></div>
       <div class="input">
-        <input class="input__number"/>
-        <input class="input__name"/>
+        <input class="input__number" />
+        <input class="input__name" />
       </div>
     </div>
     <ul class="bag__list">
@@ -30,7 +30,6 @@
 
 .main__bag {
   margin-right: $primary-margin;
-
 }
 
 .bag {
@@ -40,8 +39,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   &__info {
-
   }
 }
-
 </style>

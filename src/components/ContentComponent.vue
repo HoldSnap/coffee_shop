@@ -7,7 +7,6 @@
         <img class="content__item-img" src="" alt="water" />
         <div class="content__item_prise"></div>
       </li>
-
     </ul>
   </section>
 </template>

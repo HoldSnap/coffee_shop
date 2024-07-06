@@ -1,0 +1,149 @@
+{
+  "categories": [
+    {
+      "name": "Categories",
+      "categories": [
+        {
+          "name": "Water",
+          "products": [
+            {
+              "name": "Mineral Water",
+              "description": "Refreshing mineral water",
+              "price": 1.99
+            },
+            {
+              "name": "Sparkling Water",
+              "description": "Sparkling water with natural flavors",
+              "price": 2.49
+            },
+            {
+              "name": "Distilled Water",
+              "description": "Pure distilled water",
+              "price": 1.49
+            }
+          ]
+        },
+        {
+          "name": "Coffee",
+          "products": [
+            {
+              "name": "Espresso",
+              "description": "Strong and rich espresso",
+              "price": 2.99
+            },
+            {
+              "name": "Cappuccino",
+              "description": "Espresso with steamed milk and foam",
+              "price": 3.49
+            },
+            {
+              "name": "Latte",
+              "description": "Espresso with steamed milk",
+              "price": 3.99
+            }
+          ]
+        },
+        {
+          "name": "Coffee2",
+          "products": [
+            {
+              "name": "Americano",
+              "description": "Espresso with added hot water",
+              "price": 2.49
+            },
+            {
+              "name": "Mocha",
+              "description": "Espresso with chocolate and steamed milk",
+              "price": 4.49
+            },
+            {
+              "name": "Flat White",
+              "description": "Espresso with microfoam milk",
+              "price": 3.99
+            }
+          ]
+        },
+        {
+          "name": "NeWAter",
+          "products": [
+            {
+              "name": "Flavored Water",
+              "description": "Water with natural fruit flavors",
+              "price": 2.99
+            },
+            {
+              "name": "Alkaline Water",
+              "description": "Alkaline water for better hydration",
+              "price": 3.49
+            },
+            {
+              "name": "Electrolyte Water",
+              "description": "Water with added electrolytes",
+              "price": 2.49
+            }
+          ]
+        },
+        {
+          "name": "Boba",
+          "products": [
+            {
+              "name": "Classic Milk Tea",
+              "description": "Black tea with milk and tapioca pearls",
+              "price": 4.99
+            },
+            {
+              "name": "Taro Milk Tea",
+              "description": "Taro-flavored milk tea with boba",
+              "price": 5.49
+            },
+            {
+              "name": "Matcha Boba Tea",
+              "description": "Matcha green tea with tapioca pearls",
+              "price": 5.99
+            }
+          ]
+        },
+        {
+          "name": "Kartoha",
+          "products": [
+            {
+              "name": "French Fries",
+              "description": "Crispy golden fries",
+              "price": 2.99
+            },
+            {
+              "name": "Potato Wedges",
+              "description": "Seasoned potato wedges",
+              "price": 3.49
+            },
+            {
+              "name": "Sweet Potato Fries",
+              "description": "Sweet and savory sweet potato fries",
+              "price": 3.99
+            }
+          ]
+        },
+        {
+          "name": "Potata",
+          "products": [
+            {
+              "name": "Baked Potato",
+              "description": "Oven-baked potato with toppings",
+              "price": 3.99
+            },
+            {
+              "name": "Mashed Potatoes",
+              "description": "Creamy mashed potatoes",
+              "price": 2.99
+            },
+            {
+              "name": "Potato Salad",
+              "description": "Potato salad with mayo and herbs",
+              "price": 3.49
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
