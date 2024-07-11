@@ -5,66 +5,79 @@
       "categories": [
         {
           "name": "Water",
+          "img": "",
           "products": [
             {
               "name": "Mineral Water",
               "description": "Refreshing mineral water",
-              "price": 1.99
+              "price": 1.99,
+              "img": ""
             },
             {
               "name": "Sparkling Water",
               "description": "Sparkling water with natural flavors",
-              "price": 2.49
+              "price": 2.49,
+              "img": ""
             },
             {
               "name": "Distilled Water",
               "description": "Pure distilled water",
-              "price": 1.49
+              "price": 1.49,
+              "img": ""
             }
           ]
         },
         {
           "name": "Coffee",
+          "img": "",
           "products": [
             {
               "name": "Espresso",
               "description": "Strong and rich espresso",
-              "price": 2.99
+              "price": 2.99,
+              "img": ""
             },
             {
               "name": "Cappuccino",
               "description": "Espresso with steamed milk and foam",
-              "price": 3.49
+              "price": 3.49,
+              "img": ""
             },
             {
               "name": "Latte",
               "description": "Espresso with steamed milk",
-              "price": 3.99
+              "price": 3.99,
+              "img": ""
             }
           ]
         },
         {
           "name": "Coffee2",
+          "img": "",
           "products": [
             {
               "name": "Americano",
               "description": "Espresso with added hot water",
-              "price": 2.49
+              "price": 2.49,
+              "img": ""
             },
             {
               "name": "Mocha",
               "description": "Espresso with chocolate and steamed milk",
-              "price": 4.49
+              "price": 4.49,
+              "img": ""
             },
             {
               "name": "Flat White",
               "description": "Espresso with microfoam milk",
-              "price": 3.99
+              "price": 3.99,
+              "img": ""
             }
           ]
         },
         {
           "name": "NeWAter",
+          "img": "",
           "products": [
             {
               "name": "Flavored Water",
@@ -79,67 +92,80 @@
             {
               "name": "Electrolyte Water",
               "description": "Water with added electrolytes",
-              "price": 2.49
+              "price": 2.49,
+              "img": ""
             }
           ]
         },
         {
           "name": "Boba",
+          "img": "",
           "products": [
             {
               "name": "Classic Milk Tea",
               "description": "Black tea with milk and tapioca pearls",
-              "price": 4.99
+              "price": 4.99,
+              "img": ""
             },
             {
               "name": "Taro Milk Tea",
               "description": "Taro-flavored milk tea with boba",
-              "price": 5.49
+              "price": 5.49,
+              "img": ""
             },
             {
               "name": "Matcha Boba Tea",
               "description": "Matcha green tea with tapioca pearls",
-              "price": 5.99
+              "price": 5.99,
+              "img": ""
             }
           ]
         },
         {
           "name": "Kartoha",
+          "img": "",
           "products": [
             {
               "name": "French Fries",
               "description": "Crispy golden fries",
-              "price": 2.99
+              "price": 2.99,
+              "img": ""
             },
             {
               "name": "Potato Wedges",
               "description": "Seasoned potato wedges",
-              "price": 3.49
+              "price": 3.49,
+              "img": ""
             },
             {
               "name": "Sweet Potato Fries",
               "description": "Sweet and savory sweet potato fries",
-              "price": 3.99
+              "price": 3.99,
+              "img": ""
             }
           ]
         },
         {
           "name": "Potata",
+          "img": "",
           "products": [
             {
               "name": "Baked Potato",
               "description": "Oven-baked potato with toppings",
-              "price": 3.99
+              "price": 3.99,
+              "img": ""
             },
             {
               "name": "Mashed Potatoes",
               "description": "Creamy mashed potatoes",
-              "price": 2.99
+              "price": 2.99,
+              "img": ""
             },
             {
               "name": "Potato Salad",
               "description": "Potato salad with mayo and herbs",
-              "price": 3.49
+              "price": 3.49,
+              "img": ""
             }
           ]
         }

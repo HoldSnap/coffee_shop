@@ -1,10 +1,11 @@
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, ref, computed } from "vue";
 import categoriesData from "../stores/mock/Items.json";
+import { selectedCategoryName } from "../stores/store.js";
 
 const currentDate = ref("");
 const categories = ref(categoriesData.categories[0].categories);
-const activeIndex = ref(0);
+const activeIndex = ref(0); // Initialize to 0 to represent 'All' category
 
 const formatCurrentDate = () => {
   const options = {
@@ -16,14 +17,22 @@ const formatCurrentDate = () => {
   currentDate.value = new Date().toLocaleDateString("en-US", options);
 };
 
+const allCategories = computed(() => {
+  return ["All", ...categories.value.map(category => category.name)];
+});
+
+const setActive = (index) => {
+  activeIndex.value = index;
+  selectedCategoryName.value = index === 0 ? "" : categories.value[index - 1].name;
+  console.log(selectedCategoryName.value);
+};
+
 onMounted(() => {
   formatCurrentDate();
 });
-const setActive = (index) => {
-  activeIndex.value = index;
-};
 </script>
-pt>
+
+
 
 <template>
   <header class="header">
@@ -53,7 +62,7 @@ pt>
       <ul class="categories__list">
         <li
           class="categories__item"
-          v-for="(category, index) in categories"
+          v-for="(category, index) in allCategories"
           :key="index"
         >
           <button
@@ -63,7 +72,7 @@ pt>
             }"
             @click="setActive(index)"
           >
-            {{ category.name }}
+            {{ category }}
           </button>
         </li>
       </ul>
