@@ -85,7 +85,7 @@
 @import "src/styles/utils/mixins";
 
 .main__sidebar {
-  width: 20%;
+  width: 14%;
 }
 
 .sidebar__item {

@@ -1,11 +1,10 @@
 <script setup>
 import { onMounted, ref, computed } from "vue";
 import categoriesData from "../stores/mock/Items.json";
-import { selectedCategoryName } from "../stores/store.js";
+import { selectedCategoryName, activeCategoryIndex } from "../stores/store.js";
 
 const currentDate = ref("");
 const categories = ref(categoriesData.categories[0].categories);
-const activeIndex = ref(0);
 
 const formatCurrentDate = () => {
   const options = {
@@ -22,17 +21,14 @@ const allCategories = computed(() => {
 });
 
 const setActive = (index) => {
-  activeIndex.value = index;
+  activeCategoryIndex.value = index;
   selectedCategoryName.value = index === 0 ? "" : categories.value[index - 1].name;
-  console.log(selectedCategoryName.value);
 };
 
 onMounted(() => {
   formatCurrentDate();
 });
 </script>
-
-
 
 <template>
   <header class="header">
@@ -68,7 +64,7 @@ onMounted(() => {
           <button
             class="categories__item_button"
             :class="{
-              'categories__item_button--active': activeIndex === index,
+              'categories__item_button--active': activeCategoryIndex === index,
             }"
             @click="setActive(index)"
           >
