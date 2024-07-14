@@ -82,6 +82,7 @@
 
 <style lang="scss" scoped>
 @import "src/styles/utils/variables";
+@import "src/styles/utils/mixins";
 
 .main__sidebar {
   width: 20%;
@@ -93,19 +94,13 @@
 }
 
 .sidebar__svg {
-  width: 40px;
-  color: $background-color;
+  @include svg-style(40px, $background-color);
 }
 
 .svg__block {
-  justify-content: center;
-  align-items: center;
-  border-radius: $border-radius-large;
-  display: flex;
-  width: 150px;
-  height: 150px;
-  background-color: $primary-color;
+  @include block-style(150px, 150px, $primary-color, $border-radius-large);
 }
+
 .logo__block {
   justify-content: center;
   align-items: center;

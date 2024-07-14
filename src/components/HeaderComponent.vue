@@ -5,7 +5,7 @@ import { selectedCategoryName } from "../stores/store.js";
 
 const currentDate = ref("");
 const categories = ref(categoriesData.categories[0].categories);
-const activeIndex = ref(0); // Initialize to 0 to represent 'All' category
+const activeIndex = ref(0);
 
 const formatCurrentDate = () => {
   const options = {

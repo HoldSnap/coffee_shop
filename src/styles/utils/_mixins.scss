@@ -1,0 +1,16 @@
+@mixin svg-style($width, $color) {
+  width: $width;
+  color: $color;
+}
+
+@mixin block-style($width, $height, $bg-color, $border-radius) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
